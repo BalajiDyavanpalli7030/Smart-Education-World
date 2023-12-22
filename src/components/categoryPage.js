@@ -9,7 +9,7 @@ import LoadingAnimation from './loadingAnimation';
 const CategoryPage = () => {
   const { category } = useParams();
   const [currentCategoryImages, setCurrentCategoryImages] = useState([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [currentIndex, setCurrentIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [isHovered, setIsHovered] = useState(false);
 

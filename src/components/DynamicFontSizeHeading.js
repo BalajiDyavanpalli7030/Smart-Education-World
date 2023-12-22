@@ -24,7 +24,7 @@ const DynamicFontSizeHeading = ({ text  }) => {
         scaleFactor = 3;
       }
 
-      if (textWidth > containerWidth || description ==='Space Exploration' ) {
+      if (textWidth > containerWidth) {
         // Calculate the new font size based on the ratio of container width and text width
         const newFontSize = (containerWidth / textWidth) * scaleFactor + 'rem';
         description.style.fontSize = newFontSize;
