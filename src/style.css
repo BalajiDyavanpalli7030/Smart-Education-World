@@ -1,0 +1,935 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222222;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./images/bg.jpeg');
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    scrollbar-width: thin;
+    overflow: auto;
+  
+    /* Initially hide the scrollbar in WebKit browsers (Chrome, Safari) */
+    -ms-overflow-style: thin;
+    overflow: auto;
+    
+}
+
+body::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+  height: 10px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  background-color: transparent; /* Set the background color of the track */
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background-color: #888; /* Set the color of the handle */
+  border-radius: 6px; /* Set the border radius of the handle */
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Set the color of the handle on hover */
+}
+
+ul li{
+    list-style: none;
+}
+
+a {
+    font-size: 1.6rem;
+    text-decoration:none;
+}
+
+p, li {
+    font-size: 1.6rem;
+    margin-bottom: 0.5em ;
+    letter-spacing: 0.15em;
+}
+
+h2, h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+h1{
+    color: #530ae4;
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+    font-weight: 700;
+}
+
+
+/* Style for the container that holds the categories */
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 100px;
+    margin: auto;
+    max-width: 1200px;
+    padding-top: 10px;
+    padding-bottom: 70px;
+  }
+.main-container{
+  max-width: 1000px;
+  margin-top: 180px;
+}
+  /* Style for individual category items */
+.category-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #fff;
+  border:2px solid #fff;
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.3);
+  cursor:pointer;
+  transition: all 0.3s ease-in-out;
+}
+.category-items{
+  padding-top: 110px;
+}
+/* Style for the image inside the category item */
+.category-image {
+  width: 100%;
+  height: 400px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+.main-container-image{
+  height: 300px;
+}
+
+
+/* Style for a hover effect on category items */
+.category-item:hover {
+  z-index: 1000;
+  transform: scale(1.2);
+  /* box-shadow: 0 40px 40px 0 0 rgba(0, 0, 0, 0.2); */
+}
+
+.category-no-hover:hover{
+  z-index: 1000;
+  transform: scale(1.1);
+}
+
+/* Style for a text overlay on the image */
+.category-desc {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #530ae4;
+  text-align: center;
+
+}
+
+.navbar{
+  display: flex;
+  width: 100%;
+  background-color: #ecf5fc;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index:  100;
+  box-shadow: 0 5px 0 0px rgba(0, 0, 0, 0.1);
+
+}
+
+.navbar button, .navbar h1 {
+  cursor: pointer;
+  color: #530ae4;
+  background-color: #ecf5fc;
+  border: none;
+  border-bottom: 2px solid #530ae4;
+}
+
+.navbar h1 {
+  margin: auto;
+  margin-bottom: 0.4em;
+  margin-top: 0.2em;
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+.navbar button{
+  padding-top: 0.9em;
+  margin-bottom: 0.9em;
+  font-size: 2.5rem;
+  margin-left: -5%;
+}
+
+
+header h1{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  color: #004080;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 5rem;
+  padding: 20px;
+  box-shadow: 0 5px 15px 10px  rgba(0, 0, 0, 0.2);
+  background-color: #a0abef;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  background-image: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), url('./images/header-bg.jpeg');
+  background-position: center;
+  background-repeat: repeat-x;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+header div{
+  width: 50%;
+  margin: auto;
+  border: 2px solid #530ae4;
+  margin-top: -10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+footer {
+  width: 100%;
+  margin: auto;
+  background-color: #e6f5ff;
+  color: #ffffff;
+  text-align: center;
+}
+
+.quick-links {
+  width: 100%;
+  margin: auto;
+  display:inline-block;
+  margin-top: 10px; 
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.quick-links ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links a {
+  display: inline;
+  text-decoration: none;
+  color: #530ae4;
+  margin: 0 10px;
+  border-bottom: 2px solid #530ae4;
+}
+.quick-links li {
+  width: 20%;
+}
+.story-main-container{
+  margin-top: 100px;
+}
+.story-container h1 {
+  text-align: center;
+  color: #530ae4;
+}
+
+.story-container img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: 400px;
+}
+
+.story-container p {
+  font-size: 1.8rem;
+  line-height: 2.2;
+  text-align: justify;
+  margin: 30px;
+}
+.story-container .character-name {
+  font-weight: bold;
+  color: #530ae4;
+}
+
+.story-container .moral {
+  font-size: 2rem;
+  font-style: italic;
+  color: #530ae4;
+  margin-top: 20px;
+}
+
+/* Additional styles for story container */
+.story-container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+/* rhyme-container styles */
+.rhyme-container {
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* rhyme-title styles */
+.rhyme-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #530ae4;
+  margin-bottom: 10px;
+}
+
+/* stanza styles */
+.stanza {
+  margin:auto;
+  text-align: center;
+  font-size:1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+.stanza p{
+  text-align: center;
+}
+
+/* rhyme-line styles */
+.rhyme-line {
+  font-weight: bold;
+  color: #530ae4;
+}
+
+/* rhyme-image styles */
+.rhyme-image {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: 400px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.loading-animation {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  background: linear-gradient(#cdffd8, #94b9ff);
+  width: 100vw;
+  height: 100vh;
+}
+
+.loading-animation span {
+  display: inline-block;
+  transform-origin: 50% 50%;
+  animation: bounce 0.5s ease infinite;
+}
+
+.error-container{
+  background: linear-gradient(#cdffd8, #94b9ff);
+  /* width: 100vw; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  border: 2px solid #530ae4;
+}
+.error-container h1{
+  text-align: center;
+  font-size: 5rem;
+}
+.error-container .btn {
+  margin-bottom: 40vh;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #530ae4;
+  border: 2px solid #530ae4;
+  transition: background-color 0.3s ease;
+}
+.icon-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.btn:hover {
+  background-color: #4308b1;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-7px);
+  }
+}
+
+
+
+@media screen and (max-width: 1200px){
+  .category-container {
+    gap: 80px;
+    max-width: 950px;
+  }
+  .main-container{
+    max-width: 927px;
+    margin-top: 158px;
+  }
+    /* Style for individual category items */
+
+  .category-items{
+    padding-top: 110px;
+  }
+  /* Style for the image inside the category item */
+  .category-image {
+    height: 310px;
+  }
+
+  .main-container-image{
+    height: 300px;
+  }
+  
+  
+  /* Style for a text overlay on the image */
+  .category-desc {
+    font-size: 3.5rem;
+  }
+
+  .navbar h1 {
+    font-size: 3.5rem;
+  }
+  .navbar button{
+    margin-right: 1em;
+    font-size: 2.3rem;
+  }
+  header h1{
+    font-size: 4.5rem;
+    padding: 18px;
+  }
+  
+  header div{
+    width: 70%;
+    margin-top: -10px;
+  }
+  
+  /* footer {
+    padding: 15px;
+  } */
+  
+  .quick-links {
+    margin-bottom: 10px;
+  }
+
+  .story-main-container{
+    margin-top: 90px;
+  }
+  
+}
+
+@media screen and (max-width: 1000px){
+  .category-container {
+    max-width: 700px;
+  }
+
+  .main-container{
+    max-width: 700px;
+    margin-top: 145px;
+  }
+  .story-main-container{
+    margin-top: 100px;
+  }
+  
+  .story-container img {
+    height: 350px;
+  }
+  
+  .story-container p {
+    font-size: 1.8rem;
+    line-height: 2.1;
+    margin: 25px;
+  }
+
+  .story-container .moral {
+    font-size: 1.8rem;
+    margin-top: 18px;
+  }
+  
+  /* Additional styles for story container */
+  .story-container {
+    max-width: 700px;
+    padding: 18px;
+    margin-bottom: 40px;
+  }
+  
+  /* rhyme-container styles */
+  .rhyme-container {
+    max-width: 700px;
+    padding: 18px;
+  }
+  
+  /* rhyme-title styles */
+  .rhyme-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  /* stanza styles */
+  .stanza {
+    font-size:1.7rem;
+  }
+  
+  /* rhyme-image styles */
+  .rhyme-image {
+    margin: .88rem auto;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .category-container {
+    gap: 60px;
+    max-width: 600px;
+  }
+  .main-container{
+    max-width: 570px;
+    margin-top: 140px;
+  }
+    /* Style for individual category items */
+
+  .category-items{
+    padding-top: 100px;
+  }
+  /* Style for the image inside the category item */
+  .category-image {
+    height: 280px;
+  }
+
+  .main-container-image{
+    height: 250px;
+  }
+  
+  
+  /* Style for a text overlay on the image */
+  .category-desc {
+    font-size: 3.2rem;
+  }
+
+  .navbar h1 {
+    font-size: 3.5rem;
+  }
+
+  .navbar button{
+    margin-right: 1em;
+    font-size: 2.2rem;
+    margin-left: -13%;
+  }
+  header h1{
+    font-size: 4.0rem;
+    padding: 15px;
+  }
+  
+  header div{
+    width: 90%;
+    margin-top: 1px;
+  }
+  
+  .footer {
+    padding: 25px;
+  }
+  
+  .quick-links {
+    margin-bottom: 10px;
+  }
+  .story-main-container{
+    margin-top: 100px;
+  }
+  
+  .story-container img {
+    height: 280px;
+  }
+  
+  .story-container p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin: 20px;
+  }
+
+  .story-container .moral {
+    font-size: 1.6rem;
+    margin-top: 15px;
+  }
+  
+  /* Additional styles for story container */
+  .story-container {
+    max-width: 600px;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+    
+  /* rhyme-title styles */
+  .rhyme-title {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  
+  /* stanza styles */
+  .stanza {
+    font-size:1.6rem;
+  }
+  .error-container h1{
+    font-size: 4rem;
+  }
+  .error-container .btn {
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width: 714px){
+  .category-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 50px;
+    max-width: 250px;
+  }
+  .main-container{
+    max-width: 250px;
+    margin-top: 100px;
+  }
+    /* Style for individual category items */
+
+  .category-items{
+    padding-top: 100px;
+  }
+  /* Style for the image inside the category item */
+  .category-image {
+    height: 250px;
+  }
+
+  .main-container-image{
+    height: 280px;
+  }
+  
+  
+  /* Style for a text overlay on the image */
+  .category-desc {
+    font-size: 3.0rem;
+  }
+  .navbar button{
+    margin-right: 1em;
+    font-size: 2.3rem;
+    margin-left: -10%;
+    padding-top: 1.9em;
+    margin-bottom: 1.9em;
+  }
+  .navbar h1 {
+    font-size: 3.0rem;
+  }
+  .navbar button {
+    font-size: 1.0rem;
+  }
+
+  header h1{
+    font-size: 2.5rem;
+    padding: 10px;
+  }
+  
+  header div{
+    width: 90%;
+    margin-top: 4px;
+  }
+  
+  footer {
+    padding: 0px;
+  }
+  
+  footer quick-links {
+    font-size: 10px;
+    margin-bottom: 0px;
+  }
+  .quick-links ul {
+    justify-content: space-evenly;
+    margin: 0;
+  }
+  .quick-links ul li{
+    margin: 0;
+  }
+
+  .quick-links a {
+    font-size: 1rem;
+    display: inline;
+    text-decoration: none;
+    color: #530ae4;
+    margin: 0 10px;
+    border-bottom: 2px solid #530ae4;
+    letter-spacing: 0.15em;
+}
+.story-main-container{
+  margin-top: 100px;
+}
+
+.story-container img {
+  height: 250px;
+}
+
+.story-container p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin: 1.8rem;
+}
+
+.story-container .moral {
+  font-size: 1.5rem;
+  margin-top: 14px;
+}
+
+/* Additional styles for story container */
+.story-container {
+  max-width: 500px;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+  
+/* rhyme-title styles */
+.rhyme-title {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+
+}
+
+@media screen and (max-width: 452px){
+
+  .quick-links a {
+    font-size: 0.8rem;
+}
+.navbar button{
+  margin-right: 1em;
+  font-size: 1.0rem;
+  margin-left: -10%;
+  padding-top: 1.9em;
+  margin-bottom: 1.9em;
+}
+
+.story-main-container{
+  margin-top: 80px;
+}
+
+.story-container img {
+  height: 200px;
+}
+
+.story-container p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 1.6rem;
+}
+
+.story-container .moral {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+/* Additional styles for story container */
+.story-container {
+  max-width: 350px;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+  
+/* rhyme-title styles */
+.rhyme-title {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+}
+@media screen and (max-width: 381px){
+
+  .quick-links a {
+    font-size: 0.7rem;
+}
+.navbar button{
+  margin-right: 0.9em;
+  font-size: 1.8rem;
+  margin-left: -18%;
+  padding-top: 1.9em;
+  margin-bottom: 1.9em;
+}
+
+.story-container img {
+  height: 155px;
+}
+
+.story-container p {
+  font-size: 1.0rem;
+  line-height: 1.3;
+  margin: 1.4rem;
+}
+.story-container h1{
+  font-size: 1.8rem;;
+}
+.story-container .moral {
+  font-size: 1.1rem;
+  margin-top: 8px;
+}
+
+/* Additional styles for story container */
+.story-container {
+  max-width: 280px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+  
+/* rhyme-title styles */
+.rhyme-title {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+}
+@media screen and (max-width: 347px){
+  .quick-links a {
+    font-size: 0.6rem;
+}
+.navbar button{
+  margin-right: 0.8em;
+  font-size: 1.3rem;
+} 
+
+}
+@media screen and (max-width: 399px){
+  header h1{
+    font-size: 2.0rem;
+    padding: 12px;
+  }
+
+  
+  header div{
+    width: 85%;
+    margin-top: 5px;
+  }
+  .navbar button{
+    margin-right: 0.8em;
+    font-size: 1.2rem;
+  }
+  .error-container h1{
+    font-size: 3rem;
+  }
+  .error-container .btn {
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (max-width: 325px){
+  header h1{
+    font-size: 1.8rem;
+  }
+  
+  header div{
+    width: 90%;
+    margin-top: 4px;
+  }
+  .navbar button{
+    margin-right: 0.8em;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 298px){
+  header h1{
+    font-size: 1.2rem;
+  }
+  .navbar h1 {
+    font-size: 2.0rem;
+  }
+  header div{
+    width: 90%;
+    margin-top: 4px;
+  }
+  .quick-links a {
+    font-size: 0.4rem;
+  }
+  .navbar button{
+    margin-right: 0.8em;
+    font-size: 1.0rem;
+  }
+  .story-container img {
+    height: 130px;
+  }
+  
+  .story-container p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin: 1.2rem;
+  }
+  .story-container h1{
+    font-size: 1.3rem;;
+  }
+  .story-container .moral {
+    font-size: 1.0rem;
+    margin-top: 4px;
+  }
+  
+  /* Additional styles for story container */
+  .story-container {
+    max-width: 200px;
+    padding: 10px;
+    margin-bottom: 25px;
+  }
+    
+  /* rhyme-title styles */
+  .rhyme-title {
+    font-size: 1.0rem;
+    margin-bottom: 8px;
+  }
+}

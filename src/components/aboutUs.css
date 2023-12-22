@@ -1,0 +1,302 @@
+/* CSS styles for the about us page */
+
+.about-us-body{
+    width: 100%;
+    /* background-color: #124dc4; */
+}
+
+.about-us-heading{
+    position: relative;
+    text-align:center;
+    background-image: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.5)), url('../images/about-us.jpeg');
+    height: 400px;
+    color: #fff;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.3);
+}
+.about-us-container {
+    max-width: 850px;
+    margin: 100px auto;
+    padding: 20px;
+    z-index: 100;
+}
+
+.about-us-content {
+    font-family: 'Arial', sans-serif;
+    color: #201f1f;
+}
+
+.about-us-content h1 {
+    font-weight: 700;
+    width: 100%;
+    color: #530ae4;
+    font-size: 4rem;
+    padding-top: 20px;
+}
+
+.about-us-content h2 {
+    border-bottom: #530ae4 2px solid;
+    color: #530ae4;
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+.about-us-content p, ul, address{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.about-us-content ul li{
+    font-size: 2rem;
+}
+
+.about-us-heading p{
+    position: absolute;
+    padding: 1rem;
+    margin-bottom:0 ;
+    font-size: 2rem;
+    bottom: 0;
+    text-align:justify;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) ;
+    font-weight: 800;
+}
+
+.about-us-body  .our-mission, .our-innovation,.contact-us, .connect-us {
+    background-color: #8487ea3d;
+    margin-bottom: 2.5rem;
+    padding: 1rem;
+    /* border: #201f1f 2px solid; */
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width:900px){
+    .about-us-heading{
+        max-height: 250px;
+    }
+    .about-us-body .navbar h1{
+        font-size: 2.4rem;
+    }
+    .about-us-container {
+        max-width: 700px;
+        margin: 75px auto;
+    }
+    
+    
+    .about-us-content h2 {
+        font-size: 2.5rem;
+        margin-top: 8px;
+    }
+    
+    .about-us-content p, ul, address{
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+    .about-us-content ul li{
+        font-size: 1.8rem;
+    }
+    
+    .about-us-heading p{
+        position: absolute;
+        padding: 0.5rem;
+        font-size: 1.3rem;
+        bottom: 0;
+        font-weight: 500;
+    }
+    
+    .about-us-body  .our-mission, .our-innovation,.contact-us, .connect-us {
+        background-color: #8487ea3d;
+        padding: 0.8rem;
+    }
+}
+
+
+@media screen and (max-width:700px){
+    .about-us-heading{
+        max-height: 300px;
+    }
+    .about-us-body .navbar h1{
+        font-size: 2rem;
+    }
+    .about-us-container {
+        max-width: 550px;
+        margin: 69px auto;
+    }
+    
+    .about-us-content h1 {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    
+    .about-us-content h2 {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+    
+    .about-us-content p, ul, address{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    .about-us-content ul li{
+        font-size: 1.5rem;
+    }
+    
+    .about-us-heading p{
+        position: absolute;
+        padding: 0.5rem;
+        font-size: 1.0rem;
+        bottom: 0;
+        font-weight: 500;
+    }
+    
+    .about-us-body  .our-mission, .our-innovation,.contact-us, .connect-us {
+        background-color: #8487ea3d;
+        padding: 0.8rem;
+    }
+}
+
+@media screen and (max-width:500px){
+    .about-us-heading{
+        max-height: 200px;
+    }
+
+    .about-us-body .navbar h1{
+        
+        font-size: 1.5rem;
+    }
+    .about-us-container {
+        max-width: 450px;
+        margin: 49px auto;
+    }
+    .about-us-content h1 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+    
+    .about-us-content h2 {
+        font-size: 1.5rem;
+        margin-top: 8px;
+    }
+    
+    .about-us-content p, ul, address{
+        font-size: 1.4rem;
+        margin-bottom: 8px;
+    }
+    .about-us-content ul li{
+        font-size: 1.3rem;
+    }
+    
+    .about-us-heading p{
+        position: absolute;
+        padding: 0.5rem;
+        font-size: 1.0rem;
+        bottom: 0;
+        font-weight: 500;
+    }
+    
+    .about-us-body  .our-mission, .our-innovation,.contact-us, .connect-us {
+        background-color: #8487ea3d;
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width:400px){
+    .about-us-heading{
+        max-height: 200px;
+    }
+    .about-us-body .navbar h1{
+        
+        font-size: 1.2rem;
+    }
+    .about-us-body .navbar button{
+        
+        font-size: 0.5rem;
+    }
+    .about-us-container {
+        max-width: 350px;
+        margin: 29px auto;
+    }
+    .about-us-content h1 {
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    
+    .about-us-content h2 {
+        font-size: 1.3rem;
+        margin-top: 5px;
+    }
+    
+    .about-us-content p, ul, address{
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+    .about-us-content ul li{
+        font-size: 1.1rem;
+    }
+    
+    .about-us-heading p{
+        position: absolute;
+        padding: 0.5rem;
+        font-size: 1.0rem;
+        bottom: 0;
+        font-weight: 500;
+    }
+    
+    .about-us-body  .our-mission, .our-innovation,.contact-us, .connect-us {
+        background-color: #8487ea3d;
+        padding: 0.5rem;
+    }
+}
+@media screen and (max-width:300px){
+    .about-us-heading{
+        max-height: 100px;
+    }
+    .about-us-body .navbar h1{
+        
+        font-size: 1rem;
+    }
+    .about-us-body .navbar button{
+        
+        font-size: 0.5rem;
+    }
+
+    .about-us-container {
+        max-width: 250px;
+        margin: 29px auto;
+    }
+    .about-us-content h1 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    
+    .about-us-content h2 {
+        font-size: 1.2rem;
+        margin-top: 5px;
+    }
+    
+    .about-us-content p, ul, address{
+        font-size: 1.0rem;
+        margin-bottom: 0px;
+    }
+    .about-us-content ul li{
+        font-size: 0.8rem;
+    }
+    
+    .about-us-heading p{
+        position: absolute;
+        padding: 0.3rem;
+        font-size: 0.8rem;
+        bottom: 0;
+        font-weight: 500;
+    }
+    
+    .about-us-body  .our-mission, .our-innovation,.contact-us, .connect-us {
+        background-color: #8487ea3d;
+        padding: 0.3rem;
+    }
+}
