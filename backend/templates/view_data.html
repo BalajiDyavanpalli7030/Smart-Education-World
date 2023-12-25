@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Data</title>
+</head>
+<body>
+    <h1>View Data</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Category</th>
+                <th>Image</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+
+    </table>
+    {% for image in data %}
+    <img src="data:image/jpeg;base64,{{ image[2] }}" alt="Image">
+    {% endfor %}
+</body>
+</html>
