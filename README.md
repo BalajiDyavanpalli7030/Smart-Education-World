@@ -80,8 +80,8 @@ For any inquiries or feedback, feel free to contact me at [balajidyavanpalli@gma
 
 ## Screenshots
 
-![Homepage](https://raw.githubusercontent.com/BalajiDyavanpalli7030/Smart-Education-World/master/frontend/src/images/Smart-Education-World-1.png)
-![Category Page](https://raw.githubusercontent.com/BalajiDyavanpalli7030/Smart-Education-World/master/frontend/src/images/Smart-Education-World-2.png)
+![Homepage](https://drive.google.com/uc?id=1Ft-S7DOcc-SmZERdva7HryV55hAkusUM)
+![Category Page](https://drive.google.com/uc?id=1Uiz9iGFXyyMCAHZ1Hdv_gyglVizq29t3)
 
 
 
