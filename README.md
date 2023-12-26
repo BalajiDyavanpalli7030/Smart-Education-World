@@ -80,8 +80,8 @@ For any inquiries or feedback, feel free to contact me at [balajidyavanpalli@gma
 
 ## Screenshots
 
-![Homepage](/screenshots/homepage.png)
-![Category Page](/screenshots/category-page.png)
+![Homepage](frontend/src/images/Smart-Education-World-1.png)
+![Category Page](frontend/src/images/Smart-Education-World-2.png)
 
 
 
