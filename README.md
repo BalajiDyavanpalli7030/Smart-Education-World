@@ -15,7 +15,7 @@ An interactive educational website for kids, offering learning content across va
 1. Clone the repository:
 
    ```bash
-   [git clone https://github.com/your-username/smart-education-world.git](https://github.com/BalajiDyavanpalli7030/Smart-Education-World.git)
+   git clone https://github.com/your-username/smart-education-world.git
 
 2. Navigate to the project folder:
 
