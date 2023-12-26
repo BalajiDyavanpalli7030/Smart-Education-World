@@ -52,7 +52,7 @@ def index():
 def upload():
     try:
         # Get image data from the form
-        category = 'space'# request.form['category'] 
+        category = request.form['category'] 
         image_data = request.files['image'].read()
         description = request.form['description']
         # Insert data into MySQL database
