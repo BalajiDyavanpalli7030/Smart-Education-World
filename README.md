@@ -69,6 +69,11 @@ An interactive educational website for kids, offering learning content across va
 3. Click on an item to hear its audio description.
 4. Explore and enjoy learning with Smart Education World!
 
+## Deployment
+
+The Smart Education World website is deployed and can be accessed live at [https://smarteducationworld.netlify.app/](https://smarteducationworld.netlify.app/). Explore the interactive learning content for kids!
+
+
 ## Contact
 
 For any inquiries or feedback, feel free to contact me at [balajidyavanpalli@gmail.com].
