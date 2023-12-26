@@ -23,7 +23,7 @@ An interactive educational website for kids, offering learning content across va
    cd smart-education-world
 
 3. Set up the backend:
-   # In MySQL In app.py enter your MYSQL credentials.
+   In app.py enter your MYSQL credentials.
 
    ```bash
    # Navigate to the backend folder
