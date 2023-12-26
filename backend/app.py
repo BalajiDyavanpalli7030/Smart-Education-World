@@ -16,6 +16,33 @@ app.config['MYSQL_DB'] = 'images'
 
 mysql = MySQL(app)
 
+def setup_database():
+    # Create the 'images' database if it doesn't exist
+    cur = mysql.connection.cursor()
+    cur.execute("CREATE DATABASE IF NOT EXISTS images")
+    cur.execute("USE images")
+
+    # Check if the 'images' table already exists
+    cur.execute("SHOW TABLES LIKE 'images'")
+    table_exists = cur.fetchone()
+
+    # If 'images' table doesn't exist, create it
+    if not table_exists:
+        cur.execute("""
+            CREATE TABLE images (
+                id INT PRIMARY KEY AUTO_INCREMENT,
+                category VARCHAR(255),
+                image LONGBLOB,
+                description VARCHAR(255)
+            )
+        """)
+        mysql.connection.commit()
+
+    cur.close()
+
+# Call the setup function to create the database and table
+setup_database()
+
 @app.route('/')
 def index():
     return render_template('upload.html')
