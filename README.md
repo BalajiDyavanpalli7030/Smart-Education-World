@@ -23,6 +23,7 @@ An interactive educational website for kids, offering learning content across va
    cd smart-education-world
 
 3. Set up the backend:
+   # In MySQL In app.py enter your MYSQL credentials.
 
    ```bash
    # Navigate to the backend folder
@@ -34,7 +35,7 @@ An interactive educational website for kids, offering learning content across va
    # Run the backend server
    python app.py
 
-4. Set up the frontend:
+5. Set up the frontend:
 
    ```bash
    # Navigate to the frontend folder
@@ -46,7 +47,7 @@ An interactive educational website for kids, offering learning content across va
    # Run the frontend
    npm start
    
-5. Visit http://localhost:3000 in your browser to explore Smart Education World.
+6. Visit http://localhost:3000 in your browser to explore Smart Education World.
 
 
 ## Technologies Used
