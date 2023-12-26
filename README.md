@@ -37,7 +37,8 @@ An interactive educational website for kids, offering learning content across va
    
 4. Uploading images :
    ```
-   # Visit http://127.0.0.1:5000/ for uploading images. Mention category name and description of item (image) which you are uploading.
+   Visit http://127.0.0.1:5000/ for uploading images.
+   Mention category name and description of item (image) which you are uploading.
    for example, category is "alphabets", image is 'apple.jpeg'. So description will be "A - Apple".
 
 5. Set up the frontend:
