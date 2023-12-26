@@ -6,7 +6,6 @@ An interactive educational website for kids, offering learning content across va
 
 - `frontend/`: React.js code for the frontend
 - `backend/`: Flask code for the backend
-- `database/`: MySQL database scripts
 - `README.md`: Documentation file
 
 ## Setup and Installation
