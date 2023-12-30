@@ -8,7 +8,6 @@ An interactive educational website for kids, offering learning content across va
 
 - `backend/`: Flask code for the backend
 
-- `README.md`: Documentation file
 
 ## Setup and Installation
 
