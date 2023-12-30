@@ -59,7 +59,7 @@ An interactive educational website for kids, offering learning content across va
 ## Technologies Used
 
 - React.js for the frontend
-- HTML and CSS for styling and markup
+- CSS for styling
 - Flask for the backend
 - MySQL for data storage
 
